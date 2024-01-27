@@ -1,9 +1,4 @@
-/*
-Portfolio project using Python, SQL, Tableau
-on the subject of coronavirus deaths and vaccinations
-following a tutorial by Alex The Analyst
-by Jim Vargas
-*/
+
 
 
 
