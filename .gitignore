@@ -4,3 +4,5 @@
 *.ssmssln
 lib/
 *.html
+__pycache__/
+_pychace_/

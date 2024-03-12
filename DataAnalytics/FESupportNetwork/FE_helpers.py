@@ -40,7 +40,7 @@ def make_support_table(url):
 
 
 
-def grand_graph_draw(graph, graph_name):
+def grand_graph_draw(graph, graph_name, size=600):
     '''
         Determines a few attributes for the input nx.Graph() graph,
         and draws said graph. Returns nothing, although does create a 
@@ -70,7 +70,13 @@ def grand_graph_draw(graph, graph_name):
     nx.draw(graph, with_labels=True, pos=pos)
 
     # Creating the .html output file
-    net = Network(notebook=True, width="600px", height="600px",cdn_resources='remote')
+    net = Network(
+        notebook=True,
+        width=str(size)+"px",
+        height=str(size)+"px",
+        cdn_resources='remote'
+    )
+    net.repulsion()
     net.from_nx(graph)
     net.show(graph_name)
     return
